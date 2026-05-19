@@ -1,0 +1,5 @@
+{
+  "kotlin_host": "10.101.30.88",
+  "kotlin_port": 8081,
+  "go2rtc_url": "http://127.0.0.1:1984"
+}

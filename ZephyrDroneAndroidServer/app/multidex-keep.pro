@@ -1,0 +1,2 @@
+-keep class dji.** { *; }
+-keep class com.dji.** { *; }

@@ -1,0 +1,17 @@
+api:
+  listen: "0.0.0.0:1984"
+
+rtsp:
+  listen: "0.0.0.0:8554"
+
+webrtc:
+  listen: "0.0.0.0:8555"
+  candidates:
+    - 10.101.30.88:8555
+    - stun:stun.l.google.com:19302
+
+streams:
+  dji:
+    - rtsp://zephyr:zephyr123@10.101.30.88:8554/streaming/live/1
+  live:
+    - ffmpeg:dji#video=copy

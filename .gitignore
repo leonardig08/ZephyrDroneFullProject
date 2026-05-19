@@ -1,0 +1,235 @@
+# =========================
+# Dependencies
+# =========================
+
+node_modules/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional package manager files
+# NON ignorare package-lock/yarn.lock/pnpm-lock se vuoi build riproducibili
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+
+# =========================
+# React / Vite / JS / TS
+# =========================
+
+dist/
+build/
+.vite/
+.vite-cache/
+.cache/
+.parcel-cache/
+.next/
+out/
+coverage/
+
+*.tsbuildinfo
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Three.js / Assets pesanti
+# =========================
+
+# Modelli 3D e texture pesanti, se non vuoi pusharli
+*.glb
+*.gltf
+*.fbx
+*.obj
+*.mtl
+*.blend
+*.hdr
+*.exr
+*.ktx
+*.ktx2
+
+# Zip o asset pack grossi
+*.zip
+*.rar
+*.7z
+
+# Video pesanti
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+
+# =========================
+# React Native / Expo
+# =========================
+
+.expo/
+.expo-shared/
+expo-env.d.ts
+
+# Metro
+.metro-cache/
+
+# React Native generated
+ios/
+android/
+
+# Se invece vuoi tenere Android/iOS nel repo, commenta le due righe sopra
+# e lascia attive le sezioni Android/iOS sotto.
+
+
+# =========================
+# Android / Gradle
+# =========================
+
+.gradle/
+build/
+
+local.properties
+
+captures/
+.externalNativeBuild/
+.cxx/
+
+*.apk
+*.aab
+output-metadata.json
+
+*.hprof
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore / signing
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Firebase / Google services
+google-services.json
+
+
+# =========================
+# iOS / Xcode
+# =========================
+
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+xcuserdata/
+*.xcworkspace/
+DerivedData/
+build/
+
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.ipynb_checkpoints/
+
+# Python env/config
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# FastAPI / Flask / Streamlit
+# =========================
+
+.streamlit/secrets.toml
+instance/
+uploads/
+media/
+static/uploads/
+
+
+# =========================
+# Git / editor / system
+# =========================
+
+*.log
+logs/
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+.idea/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =========================
+# Temporary files
+# =========================
+
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+
+# =========================
+# AI / local generated stuff
+# =========================
+
+*.generated.*
+generated/
+outputs/
+screenshots/
+recordings/
